@@ -5812,6 +5812,8 @@ GameObject:
   - component: {fileID: 7099779932877017651}
   - component: {fileID: 6299359544286626779}
   - component: {fileID: -2824244539204616103}
+  - component: {fileID: -2018025849913386938}
+  - component: {fileID: 7925650047490836921}
   m_Layer: 0
   m_Name: Cane
   m_TagString: Untagged
@@ -5828,7 +5830,7 @@ Transform:
   m_GameObject: {fileID: 8471838646728628617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 8.77, y: 0.020867348, z: 3.47}
+  m_LocalPosition: {x: 8.77, y: -0.48, z: 3.47}
   m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5905,7 +5907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a37c0a5dd9172c47a024e872ed34f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 8
 --- !u!114 &-2824244539204616103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5918,6 +5920,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fcc45ffea104b94594ce119f78d38c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCausingGameOver: 1
+--- !u!114 &-2018025849913386938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8471838646728628617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fffec6217804f4b9669112cbcad288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitsRequired: 1
+--- !u!65 &7925650047490836921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8471838646728628617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13126038, y: 0.23666188, z: 0.3026882}
+  m_Center: {x: 0.0016324796, y: 0.09159127, z: 0.021241464}
 --- !u!1 &8859575363411320482
 GameObject:
   m_ObjectHideFlags: 0
