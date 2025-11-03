@@ -24,7 +24,7 @@ public class DestroyOutOffBounds : MonoBehaviour
             if (isCausingGameOver)
             {
                 Debug.Log("Game over!!! sei una pippa");
-                SceneManager.LoadScene(0);
+                //SceneManager.LoadScene(0); x ricaricare a scena iniziale ma non funziona bene
             }
         }
 
